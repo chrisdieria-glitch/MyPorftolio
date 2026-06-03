@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chris Terminal</title>
+  <link rel="stylesheet" href="terminal.css"/>
+  <link rel="stylesheet" href="base.css">
+</head>
+
+<body>
+
+<div class="terminal">
+
+  <div class="top-bar">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+    <span class="title">chris_os — v1.0</span>
+  </div>
+
+  <div id="output">
+    <p class="line">System initialized...</p>
+    <p class="line">Loading portfolio kernel ✔</p>
+    <p class="line">Type <span class="cmd">help</span> for commands.</p>
+  </div>
+
+  <div class="input-line">
+    <span class="prompt">visitor@chrisOS:~$</span>
+    <input id="input" autocomplete="off" autofocus />
+  </div>
+
+</div>
+
+<script src="terminal.js"></script>
+</body>
+</html>

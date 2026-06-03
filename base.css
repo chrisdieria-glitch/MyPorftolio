@@ -1,0 +1,25 @@
+/* base.css */
+
+:root {
+  --bg: #05070a;
+  --panel: #0c1218;
+  --border: #1f2a33;
+
+  --text: #d1ffd6;
+  --muted: #9ca3af;
+
+  --green: #00ff88;
+  --cyan: #60a5fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}

@@ -1,0 +1,148 @@
+/* portfolio.css */
+
+/* NAV */
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(5, 7, 10, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+
+.logo {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  color: var(--text);
+}
+
+/* HERO */
+.hero {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 32px 60px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  color: var(--muted);
+  max-width: 650px;
+}
+
+/* BUTTONS */
+.actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  border-color: var(--cyan);
+  transform: translateY(-2px);
+}
+
+.primary {
+  background: var(--green);
+  color: #000;
+  border: none;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 900px;
+  margin: auto;
+  padding: 70px 32px;
+}
+
+.section h2 {
+  color: var(--cyan);
+  font-size: 16px;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+/* PROJECT GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  border-color: var(--cyan);
+  transform: translateY(-3px);
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  margin: 6px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* CONTACT */
+.contact a {
+  display: block;
+  color: var(--muted);
+  text-decoration: none;
+  margin-top: 6px;
+}
+
+.contact a:hover {
+  color: var(--text);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+}

@@ -140,6 +140,107 @@
   color: var(--text);
 }
 
+/* Contact */
+
+.contact .lead {
+  margin-bottom: 18px;
+  color: var(--muted);
+}
+
+.contact-grid {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.contact-form {
+  flex: 1 1 420px;
+  background: transparent;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.contact-form label span {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 14px;
+
+  transition: ease 0.4s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--cyan);
+}
+
+.contact-form textarea { resize: vertical; }
+
+.form-actions { margin-top: 10px; }
+
+.divider {
+  width: 1px;
+  background: var(--border);
+  height: 240px;
+  align-self: center;
+}
+
+.contact-links {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.contact-links p { color: var(--muted); margin-bottom: 6px; }
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.social-btn svg { display: block; color: var(--text); }
+
+.social-btn.github { background: var(--panel); }
+.social-btn.github:hover { border-color: var(--green); color: var(--text); }
+
+.social-btn.linkedin { background: var(--cyan); color: #000; border: none; }
+.social-btn.linkedin svg { color: #000; }
+.social-btn.linkedin:hover { filter: brightness(0.95); }
+
+.contact-email { color: var(--muted); text-decoration: none; font-size: 14px; }
+
+@media (max-width: 760px) {
+  .contact-grid { flex-direction: column; }
+  .divider { display: none; }
+  .contact-links { width: 100%; }
+}
+
 /* FOOTER */
 footer {
   text-align: center;

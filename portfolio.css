@@ -23,6 +23,8 @@
   text-decoration: none;
   margin-left: 18px;
   font-size: 14px;
+
+  transition: ease 0.3s;
 }
 
 .nav a:hover {
@@ -145,4 +147,19 @@ footer {
   border-top: 1px solid var(--border);
   color: var(--muted);
   font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 35px;
+    margin-top: 7px;
+  }
+
+  .hero {
+    padding: 50px 20px 25px;
+  }
+
+  .nav a {
+    margin-left: 6px;
+  }
 }
